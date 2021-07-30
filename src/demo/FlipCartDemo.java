@@ -164,7 +164,7 @@ public class FlipCartDemo {
   
   public static String capture(WebDriver driver) throws IOException {
 	  File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-	  File Dest = new File("src/../ErrImages/" + System.currentTimeMillis()
+	  File Dest = new File("src/../Images/" + System.currentTimeMillis()
 	  + ".png");
 	  String errflpath = Dest.getAbsolutePath();
 	  FileUtils.copyFile(scrFile, Dest);
